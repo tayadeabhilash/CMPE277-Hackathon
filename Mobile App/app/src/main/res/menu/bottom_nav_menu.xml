@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_macroeconomic"
+        android:icon="@drawable/ic_macroeconomic"
+        android:title="Macroeconomic" />
+    <item
+        android:id="@+id/nav_agriculture"
+        android:icon="@drawable/ic_agriculture2"
+        android:title="Agriculture" />
+    <item
+        android:id="@+id/nav_debt"
+        android:icon="@drawable/ic_debt"
+        android:title="Debt" />
+
+    <item
+        android:id="@+id/chatButton"
+        android:icon="@drawable/ic_gpt"
+        android:title="GPT" />
+</menu>
