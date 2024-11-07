@@ -1,4 +1,4 @@
-package com.abhilash.hackathon;
+package com.abhilash.hackathon.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.abhilash.hackathon.R;
 import com.abhilash.hackathon.client.ChatAdapter;
 import com.abhilash.hackathon.client.RetrofitClient;
 import com.abhilash.hackathon.model.ChatMessage;

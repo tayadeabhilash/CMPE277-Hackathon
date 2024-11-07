@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_blue_background"
+            android:padding="8dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Macroeconomic Researcher Food Security Time Series Dashboard"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/countryFlag"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_blue_background"
+            android:padding="8dp"
+            android:src="@drawable/ic_flag" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+    <LinearLayout
+        android:id="@+id/checkboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/countrySpinner"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Macroeconomic (USD)"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/gdpCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GDP (USD)" />
+
+        <CheckBox
+            android:id="@+id/fdiInflowsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FDI Inflows (USD)" />
+
+        <CheckBox
+            android:id="@+id/fdiOutflowsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FDI Outflows (USD)" />
+
+        <CheckBox
+            android:id="@+id/importExportCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import/Export Flow" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxLayout"
+        app:rippleColor="?attr/colorControlHighlight"
+        app:tint="?attr/colorAccent"
+        android:text="Show"
+        tools:textColor="@color/black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
